@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Notes Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Notes Assistant</h1>
+    <p class="subtitle">Paste notes → choose action → get results</p>
+
+    <form id="notesForm">
+        <textarea
+            id="notes"
+            placeholder="Paste your notes here..."
+            required></textarea>
+
+        <div class="buttons">
+            <button type="button" onclick="sendData('summarize')">Summarize</button>
+            <button type="button" onclick="sendData('explain')">Explain</button>
+            <button type="button" onclick="sendData('questions')">Questions</button>
+            <button type="button" onclick="sendData('basics')">Basics</button>
+        </div>
+    </form>
+
+    <div class="output" id="output" style="display:none;">
+        <h2>Result</h2>
+        <pre id="result"></pre>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
