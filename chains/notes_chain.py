@@ -25,6 +25,12 @@ Keep it short and exam-oriented.
 Notes:
 {notes}
 
+Rules:
+- Do NOT use markdown
+- Do NOT use *, **, -, or bullet symbols
+- Use plain numbered points (1., 2., 3.)
+- Use simple text only
+
 Summary:
 """,
     input_variables=["notes"]
@@ -42,6 +48,12 @@ question_prompt = PromptTemplate(
 From the following notes, generate:
 1. 5 conceptual questions
 2. 5 short-answer questions
+
+Rules:
+- Do NOT use markdown
+- Do NOT use *, **, -, or bullet symbols
+- Use plain numbered points (1., 2., 3.)
+- Use simple text only
 
 Do NOT include explanations.
 Just list questions clearly.
@@ -71,6 +83,12 @@ For each concept:
 Notes:
 {notes}
 
+Rules:
+- Do NOT use markdown
+- Do NOT use *, **, -, or bullet symbols
+- Use plain numbered points (1., 2., 3.)
+- Use simple text only
+
 Basics:
 """,
     input_variables=["notes"]
@@ -93,6 +111,12 @@ Assume the reader is a beginner.
 
 Notes:
 {notes}
+
+Rules:
+- Do NOT use markdown
+- Do NOT use *, **, -, or bullet symbols
+- Use plain numbered points (1., 2., 3.)
+- Use simple text only
 
 Explanation:
 """
