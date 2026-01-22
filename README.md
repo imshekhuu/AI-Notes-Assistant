@@ -43,7 +43,13 @@ project/
 ├── .env
 └── README.md
 ```
+---
+## Project UI
 
+![UI Screenshot](images/ui-1.png)
+![UI Screenshot](images/ui-2.png)
+![UI Screenshot](images/ui-3.png)
+![UI Screenshot](images/ui-4.png)
 ---
 
 ## 🧠 Architecture Overview
