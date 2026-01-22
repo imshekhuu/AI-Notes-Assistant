@@ -80,3 +80,26 @@ basics_chain = basics_prompt | model | parser
 
 def extract_basics(notes):
     return basics_chain.invoke({"notes": notes})
+
+
+
+# -------------------- EXPLANATION --------------------
+explain_prompt = PromptTemplate(
+    input_variables=["notes"],
+    template="""
+Explain the following notes in very simple language.
+Use step-by-step explanation.
+Assume the reader is a beginner.
+
+Notes:
+{notes}
+
+Explanation:
+"""
+)
+
+explain_chain = explain_prompt | model | parser
+
+
+def explain_notes(notes):
+    return explain_chain.invoke({"notes": notes})
