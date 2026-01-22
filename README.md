@@ -44,12 +44,28 @@ project/
 └── README.md
 ```
 ---
-## Project UI
+## 🖥️ Project UI
 
-![UI Screenshot](images/ui-1.png)
-![UI Screenshot](images/ui-2.png)
-![UI Screenshot](images/ui-3.png)
-![UI Screenshot](images/ui-4.png)
+<p align="center">
+  <img src="images/ui-1.png" width="600"><br>
+  <em>Main Interface</em>
+</p>
+
+<p align="center">
+  <img src="images/ui-2.png" width="600"><br>
+  <em>Summary Output</em>
+</p>
+
+<p align="center">
+  <img src="images/ui-3.png" width="600"><br>
+  <em>Basics Extraction</em>
+</p>
+
+<p align="center">
+  <img src="images/ui-4.png" width="600"><br>
+  <em>Question Generation</em>
+</p>
+
 ---
 
 ## 🧠 Architecture Overview
@@ -67,8 +83,8 @@ User → Flask (`/process`) → Task Selector → LangChain LCEL → LLM → JSO
 
 ### Clone
 ```bash
-git clone https://github.com/your-username/ai-notes-assistant.git
-cd ai-notes-assistant
+git clone https://github.com/imshekhuu/AI-Notes-Assistant.git
+cd AI-Notes-Assistant
 ```
 
 ### Environment
